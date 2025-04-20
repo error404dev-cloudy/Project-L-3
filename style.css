@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background: black;
+    overflow: hidden;
+    font-family: monospace;
+    height: 100vh;
+}
+  
+#matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+  
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+  
+#name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ff80c0;
+    text-shadow: 0 0 15px #ff80c0, 0 0 30px #ff1493;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 2;
+    pointer-events: none;
+}
+  
